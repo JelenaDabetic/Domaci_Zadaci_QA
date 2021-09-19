@@ -1,0 +1,809 @@
+
+GitHub nalog:https://github.com/JelenaDabetic
+
+
+Last login: Wed Sep 15 08:06:34 on ttys000
+jelenadabetic@Jelenas-MacBook-Pro ~ % cd /Users/jelenadabetic/Desktop/domaci1 
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/jelenadabetic/Desktop/domaci1/.git/
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % gii status
+zsh: command not found: gii
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	fajl1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   fajl1.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat fajl1.txt"
+[master (root-commit) da7f912] Dodat fajl1.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	fajl2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add fajl2.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   fajl2.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat fajl2.txt"
+[master aaef72d] Dodat fajl2.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 fajl2.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   fajl1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   fajl1.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Izmenjen tekst u fajlu fajl1.txt"
+[master 673c105] Izmenjen tekst u fajlu fajl1.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git log
+commit 673c105d8beb2259fbc6db5d61e02ca147ef92e2 (HEAD -> master)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:29:22 2021 +0200
+
+    Izmenjen tekst u fajlu fajl1.txt
+
+commit aaef72d730624c448e92d1a35e3448b628bbdb3f
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:27:04 2021 +0200
+
+    Dodat fajl2.txt
+
+commit da7f91237abe95d84555036a0a3ab6a1aa0528bd
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:25:05 2021 +0200
+
+    Dodat fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git branch tok1
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok1
+Switched to branch 'tok1'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	noviFajl3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add noviFajl3.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   noviFajl3.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat noviFajl3.txt na tok1"
+[tok1 a4853d3] Dodat noviFajl3.txt na tok1
+ 1 file changed, 3 insertions(+)
+ create mode 100644 noviFajl3.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	najnovijiFajl4.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add najnovijiFajl4.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   najnovijiFajl4.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Na master grani dodat najnovijiFajl4.txt"
+[master daefca8] Na master grani dodat najnovijiFajl4.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 najnovijiFajl4.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok1
+Switched to branch 'tok1'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git chekout master
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git branch tok2
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	veomaNoviFajl5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add   
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   veomaNoviFajl5.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat veomNoviFajl5.txt na tok2"
+[master 87f2b77] Dodat veomNoviFajl5.txt na tok2
+ 1 file changed, 2 insertions(+)
+ create mode 100644 veomaNoviFajl5.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok1
+Switched to branch 'tok1'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok2
+Switched to branch 'tok2'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok2
+Switched to branch 'tok2'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	veomaNoviFajl6.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   veomaNoviFajl6.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat veomaNoviFajl6.txt na tok 2"
+[tok2 e783af6] Dodat veomaNoviFajl6.txt na tok 2
+ 1 file changed, 2 insertions(+)
+ create mode 100644 veomaNoviFajl6.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok2
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git log
+commit e783af6989019cda1e1719a80dff197eb005696a (HEAD -> tok2)
+commit e783af6989019cda1e1719a80dff197eb005696a (HEAD -> tok2)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:45:41 2021 +0200
+
+    Dodat veomaNoviFajl6.txt na tok 2
+
+commit daefca813f1015f3617a319500983ba97fcce42d
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:36:58 2021 +0200
+
+    Na master grani dodat najnovijiFajl4.txt
+
+commit 673c105d8beb2259fbc6db5d61e02ca147ef92e2
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:29:22 2021 +0200
+
+    Izmenjen tekst u fajlu fajl1.txt
+
+commit aaef72d730624c448e92d1a35e3448b628bbdb3f
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:27:04 2021 +0200
+
+    Dodat fajl2.txt
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Last login: Wed Sep 15 08:06:34 on ttys000
+jelenadabetic@Jelenas-MacBook-Pro ~ % cd /Users/jelenadabetic/Desktop/domaci1 
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/jelenadabetic/Desktop/domaci1/.git/
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % gii status
+zsh: command not found: gii
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	fajl1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   fajl1.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat fajl1.txt"
+[master (root-commit) da7f912] Dodat fajl1.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	fajl2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add fajl2.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   fajl2.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat fajl2.txt"
+[master aaef72d] Dodat fajl2.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 fajl2.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   fajl1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   fajl1.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Izmenjen tekst u fajlu fajl1.txt"
+[master 673c105] Izmenjen tekst u fajlu fajl1.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git log
+commit 673c105d8beb2259fbc6db5d61e02ca147ef92e2 (HEAD -> master)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:29:22 2021 +0200
+
+    Izmenjen tekst u fajlu fajl1.txt
+
+commit aaef72d730624c448e92d1a35e3448b628bbdb3f
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:27:04 2021 +0200
+
+    Dodat fajl2.txt
+
+commit da7f91237abe95d84555036a0a3ab6a1aa0528bd
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:25:05 2021 +0200
+
+    Dodat fajl1.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git branch tok1
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok1
+Switched to branch 'tok1'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	noviFajl3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add noviFajl3.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   noviFajl3.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat noviFajl3.txt na tok1"
+[tok1 a4853d3] Dodat noviFajl3.txt na tok1
+ 1 file changed, 3 insertions(+)
+ create mode 100644 noviFajl3.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	najnovijiFajl4.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add najnovijiFajl4.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   najnovijiFajl4.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Na master grani dodat najnovijiFajl4.txt"
+[master daefca8] Na master grani dodat najnovijiFajl4.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 najnovijiFajl4.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok1
+Switched to branch 'tok1'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git chekout master
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git branch tok2
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	veomaNoviFajl5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add   
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   veomaNoviFajl5.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat veomNoviFajl5.txt na tok2"
+[master 87f2b77] Dodat veomNoviFajl5.txt na tok2
+ 1 file changed, 2 insertions(+)
+ create mode 100644 veomaNoviFajl5.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok1
+Switched to branch 'tok1'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok2
+Switched to branch 'tok2'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok2
+Switched to branch 'tok2'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	veomaNoviFajl6.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   veomaNoviFajl6.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat veomaNoviFajl6.txt na tok 2"
+[tok2 e783af6] Dodat veomaNoviFajl6.txt na tok 2
+ 1 file changed, 2 insertions(+)
+ create mode 100644 veomaNoviFajl6.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok2
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git log
+commit e783af6989019cda1e1719a80dff197eb005696a (HEAD -> tok2)
+commit e783af6989019cda1e1719a80dff197eb005696a (HEAD -> tok2)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:45:41 2021 +0200
+
+    Dodat veomaNoviFajl6.txt na tok 2
+
+commit daefca813f1015f3617a319500983ba97fcce42d
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:36:58 2021 +0200
+
+    Na master grani dodat najnovijiFajl4.txt
+
+commit 673c105d8beb2259fbc6db5d61e02ca147ef92e2
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:29:22 2021 +0200
+
+    Izmenjen tekst u fajlu fajl1.txt
+
+commit aaef72d730624c448e92d1a35e3448b628bbdb3f
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:27:04 2021 +0200
+
+    Dodat fajl2.txt
+:...skipping...
+commit e783af6989019cda1e1719a80dff197eb005696a (HEAD -> tok2)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:45:41 2021 +0200
+
+    Dodat veomaNoviFajl6.txt na tok 2
+
+commit daefca813f1015f3617a319500983ba97fcce42d
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:36:58 2021 +0200
+
+    Na master grani dodat najnovijiFajl4.txt
+
+commit 673c105d8beb2259fbc6db5d61e02ca147ef92e2
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:29:22 2021 +0200
+
+    Izmenjen tekst u fajlu fajl1.txt
+
+commit aaef72d730624c448e92d1a35e3448b628bbdb3f
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:27:04 2021 +0200
+
+    Dodat fajl2.txt
+
+commit da7f91237abe95d84555036a0a3ab6a1aa0528bd
+:...skipping...
+commit e783af6989019cda1e1719a80dff197eb005696a (HEAD -> tok2)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:45:41 2021 +0200
+
+    Dodat veomaNoviFajl6.txt na tok 2
+
+commit daefca813f1015f3617a319500983ba97fcce42d
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:36:58 2021 +0200
+
+    Na master grani dodat najnovijiFajl4.txt
+
+commit 673c105d8beb2259fbc6db5d61e02ca147ef92e2
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:29:22 2021 +0200
+
+    Izmenjen tekst u fajlu fajl1.txt
+
+commit aaef72d730624c448e92d1a35e3448b628bbdb3f
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:27:04 2021 +0200
+
+    Dodat fajl2.txt
+
+commit da7f91237abe95d84555036a0a3ab6a1aa0528bd
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 08:25:05 2021 +0200
+
+    Dodat fajl1.txt
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok2
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	veomaNovifajl6.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   veomaNovifajl6.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat veomaNovifajl6.txt"
+[master 51a25ab] Dodat veomaNovifajl6.txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 veomaNovifajl6.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git merge tok2
+hint: Waiting for your editor to close the file... 
+Merge branch 'tok2'
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts# the commit.
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
+
+
+
+
+
+
+
+
+Last login: Wed Sep 15 08:56:17 on ttys000
+jelenadabetic@Jelenas-MacBook-Pro ~ % cd /Users/jelenadabetic/Desktop/domaci1 
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git init
+Reinitialized existing Git repository in /Users/jelenadabetic/Desktop/domaci1/.git/
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	new file:   veomaNoviFajl6.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   veomaNovifajl6.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % 
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "vomaNoviFajl6.txt dodat"
+[master bf3ad58] vomaNoviFajl6.txt dodat
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git merge tok2
+Already up to date.
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout tok1
+Switched to branch 'tok1'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	noviFajl7.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   noviFajl7.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat noviFajl7.txt na tok1"
+[tok1 c661bc0] Dodat noviFajl7.txt na tok1
+ 1 file changed, 2 insertions(+)
+ create mode 100644 noviFajl7.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch tok1
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git checkout master
+Switched to branch 'master'
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	noviFajl7.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   noviFajl7.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Dodat noviFajl7.txt na master granu "
+[master af11a6f] Dodat noviFajl7.txt na master granu
+ 1 file changed, 2 insertions(+)
+ create mode 100644 noviFajl7.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git merge tok1
+CONFLICT (add/add): Merge conflict in noviFajl7.txt
+Auto-merging noviFajl7.txt
+Automatic merge failed; fix conflicts and then commit the result.
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+	new file:   noviFajl3.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both added:      noviFajl7.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	new file:   noviFajl3.txt
+	modified:   noviFajl7.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Merged tok1"
+[master 19434d8] Merged tok1
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    fajl2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git add .
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    fajl2.txt
+
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git commit -m "Obrisan fajl2.txt"
+[master 4886985] Obrisan fajl2.txt
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 fajl2.txt
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git status
+On branch master
+nothing to commit, working tree clean
+jelenadabetic@Jelenas-MacBook-Pro domaci1 % git log
+commit 48869858b8e8a5790b563e46b57f5e4d07a7e74d (HEAD -> master)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 09:06:53 2021 +0200
+
+    Obrisan fajl2.txt
+
+commit 19434d8a8d11c572df1a72f738e0a844a2ef6efa
+Merge: af11a6f c661bc0
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 09:05:57 2021 +0200
+
+    Merged tok1
+
+commit af11a6f231b6a151fc27ac318cdcb13fcecb0a72
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 09:04:27 2021 +0200
+
+    Dodat noviFajl7.txt na master granu
+
+commit c661bc0acbebde182cb9e3b21bbf940831da8365 (tok1)
+Author: JelenaDabetic <jelena.dabetic93@gmail.com>
+Date:   Wed Sep 15 09:02:13 2021 +0200
+
+:
+
